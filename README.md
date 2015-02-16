@@ -14,7 +14,7 @@ There are a couple of bugs/limitations with this;
 * If using Chrome there seems to be some sort of timeout if you are too slow in transferring the response signalling from the recipient back to the originator, this seems to be more of an issue when using 2 machines rather than 2 windows on the same client so I suspect Chrome has a timeout on the STUN signalling somewhere, Firefox seems a lot happier with this.
 
 ### Video
-[linkname](https://www.youtube.com/watch?v=TWl08wI_eb8)
+[RTC Chat BYO Sig Demo Video (YouTube)](https://www.youtube.com/watch?v=TWl08wI_eb8)
 
 ## SMS Signalling
 This demo was written to demonstrate using SMS as the signalling method to transport the conneciton data between 2 browsers, therefore it works best on android handsets, you can test it in a desktop browser by cut & pasting the biy.ly links from one browser to another, in whiche case using dummy values for the phone numbers eg 111 & 222.
@@ -31,7 +31,4 @@ The recipient handset will need to have the main index.html page open already in
 
 ## Video
 
-[linkname](https://www.youtube.com/watch?v=88MQfHZvQj8)
-
-
-
+[RTCChat SMS Signalling Demo Video (YouTube)](https://www.youtube.com/watch?v=88MQfHZvQj8)
