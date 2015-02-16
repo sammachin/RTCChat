@@ -1,7 +1,7 @@
 # RTCChat
 Experiments in Creating RTC Data Channel withuot a framework.
 
-This repo contains 2 example projects, the first is a 'Bring your Own Signalling WebRTC chat application, it serves to show what WebRTC can do on it own and what you need to use some sort of signalling server for.
+This repo contains 2 example projects, the first is a 'Bring your Own Signalling WebRTC chat application, it serves to show what WebRTC can do on it own and what you need to use some sort of signalling server for. The second is an attempt to utilise SMS as the signalling transport so you can setup a chat between 2 people using just their phone numbers and a URL then have a direct peer 2 peer chat.
 
 To get started download or clone the repo then place either of the folders onto a webserver, the simplest way to get started on a mac is to open terminal and cd into the folder then run python -m SimpleHTTPServer, you will then have the webserver running at http://127.0.0.1:8000
 
@@ -27,6 +27,7 @@ The recipient handset will need to have the main index.html page open already in
 * Again firefox has issues with the On Message so although the channel is open messages are not recieved at the far end.
 * This demo is best tested in firefox however as due to the delay in sending and opening the SMS's the chrome bug causes the connection to timeout.
 * Certain android handsets seem to prefer different flavours of the sms: URI the current version works on the Nexus5 and LG G3 both running lolipop with Firefox as the default browser and Messaging by 8bit SMS as the default SMS client.
+* Getting the signalling in and out of the SMS client is a bit clunky, this would be really interesting to develop more as a firefox OS app with the appropriate permissions to read/write the inbox directy, it might also then be possible to take bit.ly out of the system and send the signalling direct.
 
 
 ## Video
