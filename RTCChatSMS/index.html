@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>RTCChat</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="h5utils.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="rtcchatsms.js"></script>		
+	</head>
+	<body>
+		<h1 class="title">RTC Chat</h1>
+		
+		<div id="signalling">
+			<input type='tel' id="orig" placeholder="Your Number"><br>
+			<input type='tel' id="dest" placeholder="Their Number"><br>
+			<button id='call' onclick='call()'>Start Call</button><br>
+			
+		</div>
+		
+		<div id="messaging" >
+			<div id="message"></div>
+			<hr>
+			<textarea id="msginput" rows="2" cols="80"></textarea>
+			<button  id="sendmsg" onclick='sendMsg()'>Send Message</button>
+		</div>
+		<script type=text/javascript>setup();</script>
+	</body>
+</HTML>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<meta charset="UTF-8">
+		<title>RTCChat</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="rtcchat.js"></script>
+	</head>
+	<body>
+		<h1 class="title">RTC Chat</h1>
+		<div id="signalling">
+			<button id="call" onclick='call()'>Initiate New Call</button><button id="receive" onclick='recieve()'>Receive a Call</button><br><br>
+			
+			<div id="sigdata"></div>
+			<textarea id="siginput" rows="10" cols="80" placeholder="Paste the data you are sent into here then click Process Signalling"></textarea><br>
+			<button id="exec" onclick='exec()'>Process Signalling</button>
+		</div>
+		<div id="messaging" >
+			<div id="message"></div>
+			<hr>
+			<textarea id="msginput" rows="2" cols="80"></textarea>
+			<button  id="sendmsg" onclick='sendMsg()'>Send Message</button>
+		</div>
+		<script type="text/javascript">setup()</script>
+	</body>
+</HTML>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<meta charset="UTF-8">
+		<title>RTCChat</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script src="h5utils.js"></script>
+		
+	</head>
+	<body>
+		<h1 class="title">Store</h1>
+		<h2 id ="done"></h2>
+		<script type="text/javascript">
+		
+		function getParameterByName(name) {
+		    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		        results = regex.exec(location.search);
+		    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		
+		function store(data){
+			
+		}
+		var data = getParameterByName('s');
+		console.log(data);
+		localStorage.setItem('test', data);
+		var d = document.getElementById("done");
+		d.innerText = "You can now close this page"
+		</script> 
+	</body>
+</HTML>
